@@ -17,4 +17,5 @@ Application of Chinese Remainder Theorem (CRT) to compute solution of a system o
   -h, --help  show this help message and exit
   - --poly: required in order to work with polynomials. By using this argument, you are informing the program that it must interpret your input as couples of polynomials. Inserting polynomials representations without using this option will raise an error.  
   Example: **python3 CRT.py --poly 1,2,1%1,1 1,1%1,2** => (1.0 x + 1.0) mod (1.0 x^2 + 3.0 x + 2.0)
-  - -m: modulus representing the cardinality of the support of the finite field the polynomials coefficients are taken from. Example: -m 5 means all coefficients are mod 5, so they are all numbers between 0 and 4.
+  - -m: modulus representing the cardinality of the support of the finite field the polynomials coefficients are taken from. Example: -m 5 means all coefficients are mod 5, so they are all numbers between 0 and 4.  
+  ***NOTE:* this option can be used only combined with --poly option. If --poly is not used, this option will be simply ignored**
